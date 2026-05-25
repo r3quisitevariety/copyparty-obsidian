@@ -27,8 +27,7 @@ The file never touches your vault — only the embed is inserted.
 | Run "Migrate local attachments" command | Uploads existing local files **in currently viewed note** and rewrites links |
 
 ## Installation
-### 1. Download release
-Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
+### 1. Download release Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
 
 ### 2. Install
 
@@ -78,7 +77,7 @@ cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-
 
 Then enable the plugin in Obsidian → Settings → Community Plugins. (Should be called "Copyparty Uploader")
 
-## Configuration
+# Configuration
 
 ### 1. Configure
 
