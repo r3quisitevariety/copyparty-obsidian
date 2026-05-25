@@ -29,7 +29,7 @@ The file never touches your vault — only the embed is inserted.
 ## Installation
 ### 1. Download Release on Github
 
-Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
+Download the latest [release](https://github.com/r3quisitevariety/copyparty-obsidian/releases), and extract the .zip archive containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
 
 ### 2. Install
 
