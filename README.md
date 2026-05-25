@@ -1,9 +1,11 @@
 # Copyparty Uploader — Obsidian Plugin
 
 > [!WARNING]
-> Ensure you have a backup of your vault, as this plugin *will* delete all your attachments (based on where you set the attachment folder in obsidian settings) and upload them to copyparty, being the new default way of managing attachments in obsidian. This is irreversible and it is your responsibility to handle files properly. You will have to manually update all previous locally linked attachments to the remote copyparty server on a note by note basis. (the migration command can help you out here).
-
-> You can temporarily scope your attachments to a different folder (Settings --> Files and Links --> Default location for new attachments) to test the plugin out before fully committing.
+> Back up your vault before using this plugin. By default, it uploads attachments to Copyparty based on your current Obsidian attachment settings, and it may remove the local files from your vault without rewriting the links in your notes.
+>
+> If you want to migrate gradually, use the migration command to upload and rewrite attachments note by note.
+>
+> To test the plugin safely before fully committing, temporarily change **Settings → Files & Links → Default location for new attachments** to a separate folder and try it there first.
 
 This plugin currently does not support obsidian canvas.
 
