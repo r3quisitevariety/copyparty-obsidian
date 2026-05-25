@@ -27,7 +27,9 @@ The file never touches your vault — only the embed is inserted.
 | Run "Migrate local attachments" command | Uploads existing local files **in currently viewed note** and rewrites links |
 
 ## Installation
-### 1. Download release Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
+### 1. Download Release on Github
+
+Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
 
 ### 2. Install
 
@@ -62,7 +64,7 @@ npm run build
 
 ### 2. Install
 
-Copy the three output files into your vault's plugin folder:
+Copy the output files into your vault's plugin folder:
 
 ```bash
 # make the directory "copyparty-uploader" under .obsidian/plugins if it doesnt exist
