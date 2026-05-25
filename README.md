@@ -128,3 +128,7 @@ out of your vault and onto the server.
   this is intentional for a thin-client setup.
 - Auth credentials are stored in `.obsidian/plugins/copyparty-uploader/data.json`
   (plain text). Fine for a local homelab, not for anything public-facing.
+
+## Roadmap
+- Wrap the project in nix for funsies :3
+- add canvas support
