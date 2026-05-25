@@ -31,6 +31,7 @@ The file never touches your vault — only the embed is inserted.
 ### 1. Build
 
 ```bash
+git clone https://github.com/r3quisitevariety/copyparty-obsidian.git
 cd copyparty-obsidian
 npm install
 npm run build
@@ -40,11 +41,15 @@ npm run build
 
 Copy the three output files into your vault's plugin folder:
 
-```
+```bash
+# make the directory "copyparty-uploader" under .obsidian/plugins if it doesnt exist
+cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-uploader
+
+# this is what the directory should look like
 .obsidian/plugins/copyparty-uploader/
   main.js
   manifest.json
-  styles.css   (not needed, skip if absent)
+  styles.css   #(not needed, skip if absent)
 ```
 
 Then enable the plugin in Obsidian → Settings → Community Plugins.
