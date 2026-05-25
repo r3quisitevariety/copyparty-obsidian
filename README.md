@@ -26,7 +26,31 @@ The file never touches your vault — only the embed is inserted.
 | Drop any other file | Uploads → `[filename](url?raw)` |
 | Run "Migrate local attachments" command | Uploads existing local files **in currently viewed note** and rewrites links |
 
-## Setup
+## Installation
+### 1. Download release
+Download the latest release containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
+
+### 2. Install
+
+Copy the files into your vault's plugin folder:
+
+```bash
+# make the directory "copyparty-uploader" under .obsidian/plugins if it doesnt exist
+cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-uploader
+
+# this is what the directory should look like
+.obsidian/plugins/copyparty-uploader/
+  main.js
+  manifest.json
+  styles.css   #(not needed, skip if absent)
+```
+
+If you are on windows, drag the files to the plugins directory under your vault, ensuring you have made a folder called "copyparty-uploader".
+
+Then enable the plugin in Obsidian → Settings → Community Plugins. (Should be called "Copyparty Uploader")
+
+## Development
+Installation steps for development. Follow steps above instead if you just want to use the plugin without developing it.
 
 ### 1. Build
 
@@ -54,7 +78,9 @@ cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-
 
 Then enable the plugin in Obsidian → Settings → Community Plugins. (Should be called "Copyparty Uploader")
 
-### 3. Configure
+## Configuration
+
+### 1. Configure
 
 Go to Settings → Copyparty Uploader:
 
@@ -64,7 +90,7 @@ Go to Settings → Copyparty Uploader:
 
 Hit **Test** to confirm connectivity.
 
-### 4. Copyparty config
+### 2. Copyparty config
 
 Make your upload directory world-writable so no credentials are needed:
 
