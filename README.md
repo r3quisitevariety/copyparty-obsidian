@@ -1,7 +1,11 @@
 # Copyparty Uploader — Obsidian Plugin
 
 > [!WARNING]
-> Ensure you have a backup of your vault, as this plugin *will* delete all your attachments and upload them to copyparty, being the new default way of managing attachments in obsidian. This is irreversible and it is your responsibility to handle files properly.
+> Ensure you have a backup of your vault, as this plugin *will* delete all your attachments (based on where you set the attachment folder in obsidian settings) and upload them to copyparty, being the new default way of managing attachments in obsidian. This is irreversible and it is your responsibility to handle files properly. You will have to manually update all previous locally linked attachments to the remote copyparty server.
+
+This plugin currently does not support obsidian canvas.
+
+---
 
 Paste or drop any media file into Obsidian and it gets uploaded to your
 self-hosted [Copyparty](https://github.com/9001/copyparty) server automatically.
@@ -16,7 +20,7 @@ The file never touches your vault — only the embed is inserted.
 | Paste/drop audio | Uploads → `<audio src="url?raw" controls>` |
 | Paste/drop PDF | Uploads → `![filename](url?raw)` |
 | Drop any other file | Uploads → `[filename](url?raw)` |
-| Run "Migrate local attachments" command | Uploads existing local files and rewrites links |
+| Run "Migrate local attachments" command | Uploads existing local files **in currently viewed note** and rewrites links |
 
 ## Setup
 
