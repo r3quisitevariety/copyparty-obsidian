@@ -1,5 +1,8 @@
 # Copyparty Uploader — Obsidian Plugin
 
+> [!WARNING]
+> Ensure you have a backup of your vault, as this plugin *will* delete all your attachments and upload them to copyparty, being the new default way of managing attachments in obsidian. This is irreversible and it is your responsibility to handle files properly.
+
 Paste or drop any media file into Obsidian and it gets uploaded to your
 self-hosted [Copyparty](https://github.com/9001/copyparty) server automatically.
 The file never touches your vault — only the embed is inserted.
@@ -71,7 +74,7 @@ acam: GET, HEAD, PUT, POST, DELETE, OPTIONS
 allow-csrf
 ```
 
-Note that this plugin has been tested on a LAN + tailscale setup without port forwarding, meaning it can be potentially unsafe to do this on the public internet.
+Note that this plugin has been tested on a LAN + tailscale setup, meaning it can be potentially unsafe to add these options if your copyparty setup exists on the public internet.
 
 ## Migrate existing local attachments
 
