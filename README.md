@@ -62,6 +62,17 @@ accs:
 
 Or keep it write-only from outside and enter your credentials in plugin settings.
 
+Also ensure you have the following options in your global config to allow copyparty to properly communicate with obsidian:
+
+```ini
+[global]
+acao: *
+acam: GET, HEAD, PUT, POST, DELETE, OPTIONS
+allow-csrf
+```
+
+Note that this plugin has been tested on a LAN + tailscale setup without port forwarding, meaning it can be potentially unsafe to do this on the public internet.
+
 ## Migrate existing local attachments
 
 Run the command palette → **Copyparty: Upload all local attachments in this note**
