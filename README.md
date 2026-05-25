@@ -52,7 +52,7 @@ cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-
   styles.css   #(not needed, skip if absent)
 ```
 
-Then enable the plugin in Obsidian → Settings → Community Plugins.
+Then enable the plugin in Obsidian → Settings → Community Plugins. (Should be called "Copyparty Uploader")
 
 ### 3. Configure
 
@@ -97,8 +97,7 @@ out of your vault and onto the server.
 
 ## Notes
 
-- Files are uploaded via HTTP PUT. Copyparty handles deduplication server-side.
-- Filenames are sanitized (spaces → underscores) before upload.
+- Filenames are sanitized with timestamps + original filename before upload.
 - If upload fails, Obsidian's default paste behaviour is blocked for that file
   and an error notice is shown. The file is not saved locally as fallback —
   this is intentional for a thin-client setup.
