@@ -1,0 +1,10 @@
+{
+	"id": "copyparty-uploader",
+	"name": "Copyparty Uploader",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Paste or drop media files and have them automatically uploaded to your self-hosted Copyparty server and embedded in your note.",
+	"author": "requisite",
+	"authorUrl": "https://github.com/r3quisitevariety",
+	"isDesktopOnly": false
+}
