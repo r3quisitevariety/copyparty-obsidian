@@ -35,7 +35,7 @@ If you have downloaded the plugin through the community plugins tab, skip the in
 
 ### 1. Download Release on Github
 
-Download the latest [release](https://github.com/r3quisitevariety/copyparty-obsidian/releases), and extract the .zip archive containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
+Download the latest [release](https://github.com/r3quisitevariety/copyparty-obsidian/releases), and extract the .zip archive containing `main.js` & `manifest.json`.
 
 ### 2. Install
 
