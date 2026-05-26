@@ -33,6 +33,8 @@ The file never touches your vault — only the embed is inserted.
 | Run "Migrate local attachments" command | Uploads existing local files **in currently viewed note** and rewrites links |
 
 ## Installation
+If you have downloaded the plugin through the community plugins tab, skip the installation section and head over towards **Configuration**.
+
 ### 1. Download Release on Github
 
 Download the latest [release](https://github.com/r3quisitevariety/copyparty-obsidian/releases), and extract the .zip archive containing `main.js` & `manifest.json` (additionally `styles.css` if it exists). 
