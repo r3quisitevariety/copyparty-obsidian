@@ -7,8 +7,6 @@
 >
 > To test the plugin safely before fully committing, temporarily change **Settings → Files & Links → Default location for new attachments** to a separate folder and try it there first.
 
-This plugin currently does not support obsidian canvas.
-
 ---
 
 Paste or drop any media file into Obsidian and it gets uploaded to your
@@ -45,13 +43,12 @@ Copy the files into your vault's plugin folder:
 
 ```bash
 # make the directory "copyparty-uploader" under .obsidian/plugins if it doesnt exist
-cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-uploader
+cp main.js manifest.json ~/path/to/vault/.obsidian/plugins/copyparty-uploader
 
 # this is what the directory should look like
 .obsidian/plugins/copyparty-uploader/
   main.js
   manifest.json
-  styles.css   #(not needed, skip if absent)
 ```
 
 If you are on windows, drag the files to the plugins directory under your vault, ensuring you have made a folder called "copyparty-uploader".
@@ -76,13 +73,12 @@ Copy the output files into your vault's plugin folder:
 
 ```bash
 # make the directory "copyparty-uploader" under .obsidian/plugins if it doesnt exist
-cp main.js manifest.json styles.css ~/path/to/vault/.obsidian/plugins/copyparty-uploader
+cp main.js manifest.json ~/path/to/vault/.obsidian/plugins/copyparty-uploader
 
 # this is what the directory should look like
 .obsidian/plugins/copyparty-uploader/
   main.js
   manifest.json
-  styles.css   #(not needed, skip if absent)
 ```
 
 Then enable the plugin in Obsidian → Settings → Community Plugins. (Should be called "Copyparty Uploader")
@@ -93,7 +89,7 @@ Then enable the plugin in Obsidian → Settings → Community Plugins. (Should b
 
 Go to Settings → Copyparty Uploader:
 
-- **Server URL**: `http://inspiron:3923` (no trailing slash)
+- **Server URL**: `http://your-ip-here:3923` (no trailing slash)
 - **Upload path**: `/obsidian-uploads` or wherever you want files to land
 - **Username / Password**: leave blank if your upload path has `w: *` (world-writable)
 
@@ -139,6 +135,3 @@ out of your vault and onto the server.
 - Auth credentials are stored in `.obsidian/plugins/copyparty-uploader/data.json`
   (plain text). Fine for a local homelab, not for anything public-facing.
 
-## Roadmap
-- Wrap the project in nix for funsies :3
-- add canvas support
