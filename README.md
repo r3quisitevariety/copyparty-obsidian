@@ -109,16 +109,14 @@ accs:
 
 Or keep it write-only from outside and enter your credentials in plugin settings.
 
-Also ensure you have the following options in your global config to allow copyparty to properly communicate with obsidian:
+Also ensure you have the following option in your global config to allow copyparty to properly communicate with obsidian:
 
 ```ini
 [global]
-acao: *
-acam: GET, HEAD, PUT, POST, DELETE, OPTIONS
 allow-csrf
 ```
 
-Note that this plugin has been tested on a LAN + tailscale setup, meaning it can be potentially unsafe to add these options if your copyparty setup exists on the public internet.
+Note that this plugin has been tested on a LAN + tailscale setup. The ``allow-csrf`` option is **unsafe** on the public internet, and the author advises against using it in general. A more secure setup would involve a reverse proxy configuration, but I have not tested that yet. 
 
 ## Migrate existing local attachments
 
