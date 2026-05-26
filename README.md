@@ -15,6 +15,12 @@ Paste or drop any media file into Obsidian and it gets uploaded to your
 self-hosted [Copyparty](https://github.com/9001/copyparty) server automatically.
 The file never touches your vault — only the embed is inserted.
 
+## Demo
+<img width="781" height="277" alt="record-2026-05-26_02-28-51" src="https://github.com/user-attachments/assets/144ca944-98f8-4b39-8036-c4c90de6717b" />
+
+
+
+
 ## What it does
 
 | Action | Result |
